@@ -45,3 +45,6 @@
 <br clear="both">
 
 <img src="https://raw.githubusercontent.com/Temur5319436/Temur5319436/output/snake.svg" alt="Snake animation" />
+
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Temur5319436&data=followers,repositories,stars,commits&theme=dark)](https://github.com/Temur5319436)
+
