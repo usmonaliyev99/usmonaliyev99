@@ -1,8 +1,9 @@
+<div height="50%">
+	<h1 align="right">🫡 I'm Usmonaliyev!</h1>
+</div>
+
 <div>
 	<img align="left" width="50%" src="https://media.tenor.com/SPHqP38ltpoAAAAd/you-are.gif"  />
-	<div height="50%">
-		<h1 align="right">🫡 I'm Usmonaliyev!</h1>
-	</div>
 </div>
 
 <p align="right">
