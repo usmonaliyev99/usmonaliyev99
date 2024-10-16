@@ -3,7 +3,7 @@
 </div>
 
 <div>
-	<img align="left" width="50%" src="https://media.tenor.com/SPHqP38ltpoAAAAd/you-are.gif"  />
+	<img align="left" width="50%" src="https://i.giphy.com/rY93u9tQbybks.webp"  />
 </div>
 
 <p align="right">
