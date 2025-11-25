@@ -1,0 +1,21 @@
+site_name: usmonaliyev99
+site_description: My home
+site_author: Usmonaliyev Temur
+
+site_url: https://usmonaliyev99.github.io/usmonaliyev99/
+repo_url: https://github.com/usmonaliyev99/
+
+theme:
+  name: shadcn
+
+nav:
+  - Home: index.md
+  - Packages: package.md
+  - My trip: my-trip.md
+  - Skills: skill.md
+  - Contacts: contact.md
+
+
+plugins:
+  - search
+  - termynal
