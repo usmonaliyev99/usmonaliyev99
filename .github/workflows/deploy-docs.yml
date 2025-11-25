@@ -24,7 +24,9 @@ jobs:
 
       - name: Install MkDocs
         run: |
-          pip install mkdocs mkdocs-shadcn mkdocs-terminal
+          pip install mkdocs 
+          pip install mkdocs-shadcn
+          pip install termynal
 
       - name: Deploy using mkdocs gh-deploy
         run: mkdocs gh-deploy --force
