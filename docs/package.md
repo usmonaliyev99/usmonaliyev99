@@ -1,6 +1,7 @@
 # My packages
 
-I build few packages for laravel.
+I work with few languages and framewors but Laravel is one of loved framework of mine, it is very confortable and easy to understand.
+That is why I created few packages for Laravel.
 
 ## redium
 
