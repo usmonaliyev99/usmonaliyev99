@@ -1,0 +1,3 @@
+mkdocs==1.6.1
+mkdocs-shadcn==0.9.7
+termynal==0.13.1
