@@ -5,14 +5,27 @@ site_author: Usmonaliyev Temur
 site_url: https://usmonaliyev99.github.io/usmonaliyev99/
 repo_url: https://github.com/usmonaliyev99/
 
+watch:
+  - docs
+
 theme:
-  name: shadcn
+  name: swan
 
 nav:
   - Home: index.md
   - Packages: package.md
   - My trip: my-trip.md
   - Skills: skill.md
+  - Docker:
+    - Build: docker/build.md
+    - Docker compose: docker/docker-compose.md
+  - Kubernetes:
+    - Minikube: kubernetes/minikube.md
+    - K3S: kubernetes/k3s.md
+  - Gitlab:
+    - Setup Gitlab server: gitlab/server.md
+    - Install GitLab Runner: gitlab/runner.md
+    - CI/CD: gitlab/ci-cd.md
   - Contacts: contact.md
 
 
