@@ -22,9 +22,11 @@ nav:
   - Kubernetes:
     - Minikube: kubernetes/minikube.md
     - K3S: kubernetes/k3s.md
+    - HELM: kubernetes/helm.md
   - Gitlab:
     - Setup Gitlab server: gitlab/server.md
     - Install GitLab Runner: gitlab/runner.md
+    - HELM: gitlab/helm.md
     - CI/CD: gitlab/ci-cd.md
   - Contacts: contact.md
 
