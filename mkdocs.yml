@@ -26,6 +26,7 @@ nav:
   - Gitlab:
     - Setup Gitlab server: gitlab/server.md
     - Install GitLab Runner: gitlab/runner.md
+    - Base image: gitlab/base-image.md
     - HELM: gitlab/helm.md
     - CI/CD: gitlab/ci-cd.md
   - Contacts: contact.md

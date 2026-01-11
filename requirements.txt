@@ -1,4 +1,3 @@
 mkdocs==1.6.1
-mkdocs-shadcn==0.9.7
 mkdocs-swan==0.4.0
 termynal==0.13.1

@@ -22,11 +22,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install MkDocs
-        run: |
-          pip install mkdocs 
-          pip install mkdocs-shadcn
-          pip install termynal
+      - name: Install requirements
+        run: pip install -r requirements.txt
 
       - name: Deploy using mkdocs gh-deploy
         run: mkdocs gh-deploy --force
