@@ -1,4 +1,4 @@
-## To install GitLab Runner
+# To install GitLab Runner
 
 ### Add the official GitLab repository:
 

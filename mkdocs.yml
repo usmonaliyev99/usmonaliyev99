@@ -16,20 +16,21 @@ nav:
   - Packages: package.md
   - My trip: my-trip.md
   - Skills: skill.md
+  - Contacts: contact.md
   - Docker:
+    - Install: docker/install.md
     - Build: docker/build.md
     - Docker compose: docker/docker-compose.md
   - Kubernetes:
     - Minikube: kubernetes/minikube.md
-    - K3S: kubernetes/k3s.md
-    - HELM: kubernetes/helm.md
+    - k3s: kubernetes/k3s.md
+    - helm: kubernetes/helm.md
   - Gitlab:
-    - Setup Gitlab server: gitlab/server.md
-    - Install GitLab Runner: gitlab/runner.md
+    - Setup gitlab server: gitlab/server.md
+    - Install gitLab runner: gitlab/runner.md
     - Base image: gitlab/base-image.md
-    - HELM: gitlab/helm.md
+    - helm: gitlab/helm.md
     - CI/CD: gitlab/ci-cd.md
-  - Contacts: contact.md
 
 
 plugins:
