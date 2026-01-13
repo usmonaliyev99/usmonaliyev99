@@ -31,14 +31,8 @@ deploy:
     - chmod 600 ~/.ssh/id_rsa
     - ssh-keyscan $SSH_HOST >> ~/.ssh/known_hosts
   script:
-    - |
-      ssh $SSH_USER@$SSH_HOST << 'EOF'
-        set -e
-
-        docker pull $CI_REGISTRY:$CI_PIPELINE_IID
-        systemctl restart $SERVICE_NAME
-        systemctl status $SERVICE_NAME
-      EOF
+    - ssh $SSH_USER@$SSH_HOST "docker pull $CI_REGISTRY_IMAGE:$CI_PIPELINE_IID"
+    - ssh $SSH_USER@$SSH_HOST "sudo systemctl restart $SERVICE_NAME"
   only:
     - main
 ```
