@@ -17,7 +17,7 @@
 
 <pre>Also I have passive skills and I'm learning something...</pre>
 
-<img src="https://skillicons.dev/icons?i=javascript,mysql,sklearn,linux,bash&theme=light" />
+<img src="https://skillicons.dev/icons?i=javascript,mysql,linux,bash&theme=light" />
 
 <div align="center">
 	<h1>I'm trying to feed this snake every day...</h1>
