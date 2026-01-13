@@ -31,7 +31,7 @@ nav:
     - Base image: gitlab/base-image.md
     - helm: gitlab/helm.md
     - CI/CD: gitlab/ci-cd.md
-
+    - CI/CD for systemd: gitlab/ci-cd-docker-unit.md 
 
 plugins:
   - search
