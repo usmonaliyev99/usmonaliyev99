@@ -17,8 +17,8 @@
 <pre>In these day, I'm learning devops so I want to share that with you.</pre>
 <img src="https://skillicons.dev/icons?i=bash,docker,k8s,gitlab&theme=light" />
 
-<pre>Also I have passive skills and I'm learning something...</pre>
-<img src="https://skillicons.dev/icons?i=javascript,mysql,rabbitmq&theme=light" />
+<pre>These are passive skills...</pre>
+<img src="https://skillicons.dev/icons?i=javascript,mysql,rabbitmq,flask&theme=light" />
 
 <div align="center">
 	<h1>I'm trying to feed this snake every day...</h1>
