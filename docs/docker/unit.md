@@ -17,7 +17,7 @@ Requires=docker.service
 [Service]
 Restart=always
 TimeoutStartSec=0
-# Run container
+ExecStartPre=-/usr/bin/docker rm -f f-backend
 ExecStart=/usr/bin/docker run \
   --name f-backend \
   --restart=no \
@@ -27,7 +27,6 @@ ExecStart=/usr/bin/docker run \
   -e PG_PASSWORD=friend \
   -e PG_USER=supperpassword \
   gitlab.usmonaliyev99.com:5050/apps/f-backend:prod
-# Stop container
 ExecStop=/usr/bin/docker stop f-backend
 
 [Install]

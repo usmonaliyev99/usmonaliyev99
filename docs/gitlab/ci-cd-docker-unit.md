@@ -7,23 +7,21 @@ stages:
   - build
   - deploy
 
+variables:
+  TAG: prod
+
 build:
   stage: build
   script:
-    - docker build -t $CI_REGISTRY_IMAGE:$CI_PIPELINE_IID .
-    - docker tag $CI_REGISTRY_IMAGE:$CI_PIPELINE_IID $CI_REGISTRY_IMAGE:prod
-    - docker push $CI_REGISTRY_IMAGE:$CI_PIPELINE_IID
-    - docker push $CI_REGISTRY_IMAGE:prod
-    - docker rmi $CI_REGISTRY_IMAGE:prod || true
-    - docker rmi $CI_REGISTRY_IMAGE:$CI_PIPELINE_IID || true
+    - docker build -t $CI_REGISTRY_IMAGE:$TAG .
+    - docker push $CI_REGISTRY_IMAGE:$TAG
+    - docker rmi $CI_REGISTRY_IMAGE:$TAG || true
   only:
     - main
 
 deploy:
   stage: deploy
   image: alpine:3.20
-  variables:
-    SERVICE_NAME: f-backend.service
   before_script:
     - apk add --no-cache openssh
     - mkdir -p ~/.ssh
@@ -31,8 +29,8 @@ deploy:
     - chmod 600 ~/.ssh/id_rsa
     - ssh-keyscan $SSH_HOST >> ~/.ssh/known_hosts
   script:
-    - ssh $SSH_USER@$SSH_HOST "docker pull $CI_REGISTRY_IMAGE:$CI_PIPELINE_IID"
-    - ssh $SSH_USER@$SSH_HOST "sudo systemctl restart $SERVICE_NAME"
+    - ssh $SSH_USER@$SSH_HOST "docker pull $CI_REGISTRY_IMAGE:$TAG"
+    - ssh $SSH_USER@$SSH_HOST "systemctl restart $SERVICE_NAME"
   only:
     - main
 ```
