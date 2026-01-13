@@ -11,13 +11,14 @@
 	<h1>My skills</h1>
 </div>
 
-<pre>That is my active skills...</pre>
-  
-<img src="https://skillicons.dev/icons?i=vim,php,laravel,git,postgres,redis,py,rabbitmq&theme=light" />
+<pre>In this list, you can see my dayily skills.</pre>
+<img src="https://skillicons.dev/icons?i=vim,php,laravel,git,postgres,redis,py,linux&theme=light" />
+
+<pre>In these day, I'm learning devops so I want to share that with you.</pre>
+<img src="https://skillicons.dev/icons?i=bash,docker,k8s,gitlab&theme=light" />
 
 <pre>Also I have passive skills and I'm learning something...</pre>
-
-<img src="https://skillicons.dev/icons?i=javascript,mysql,linux,bash&theme=light" />
+<img src="https://skillicons.dev/icons?i=javascript,mysql,rabbitmq&theme=light" />
 
 <div align="center">
 	<h1>I'm trying to feed this snake every day...</h1>
