@@ -15,7 +15,7 @@
 <img src="https://skillicons.dev/icons?i=vim,php,laravel,git,postgres,redis,py,linux&theme=light" />
 
 <pre>In these day, I'm learning devops so I want to share that with you.</pre>
-<img src="https://skillicons.dev/icons?i=bash,docker,k8s,gitlab&theme=light" />
+<img src="https://skillicons.dev/icons?i=bash,ansible,docker,k8s,gitlab&theme=light" />
 
 <pre>These are passive skills...</pre>
 <img src="https://skillicons.dev/icons?i=javascript,mysql,rabbitmq,flask&theme=light" />
