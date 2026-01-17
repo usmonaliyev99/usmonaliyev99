@@ -26,20 +26,36 @@ sudo bash script.deb.sh
 sudo apt install gitlab-runner
 ```
 
-### To install a specific version of GitLab Runner:
-
-```bash
-apt-cache madison gitlab-runner
-sudo apt install gitlab-runner=17.7.1-1 gitlab-runner-helper-images=17.7.1-1
-```
-
-If you attempt to install a specific version of gGitlab-runner without installing the same version of gitlab-runner-helper-images, you might encounter the following error:
-
-```bash
-sudo apt install gitlab-runner=17.7.1-1
-The following packages have unmet dependencies:
-gitlab-runner : Depends: gitlab-runner-helper-images (= 17.7.1-1) but 17.8.3-1 is to be installed
-E: Unable to correct problems, you have held broken packages.
-```
-
 [Source](https://docs.gitlab.com/runner/install/linux-repository/)
+
+4 After install gitlab runner, you should create volume for your worker to use docker in your pipeline.
+
+```shell
+sudo vim /etc/gitlab-runner/config.toml
+```
+
+Mount `/var/run/docker.sock:/var/run/docker.sock` file like this:
+
+```toml
+[[runners]]
+  name = "docker-runner"
+  url = "https://about.gitlab.com/"
+  token = "your-token"
+  executor = "docker"
+  [runners.custom_build_dir]
+  [runners.docker]
+    tls_verify = false
+    image = "docker:latest"
+    privileged = true
+    disable_entrypoint_overwrite = false
+    oom_kill_disable = false
+    disable_cache = false
+    volumes = ["/cache", "/var/run/docker.sock:/var/run/docker.sock"]
+    shm_size = 0
+```
+
+5 After change `config.toml`, restart your gitlab runner
+
+```shell
+sudo gitlab-runner restart
+```

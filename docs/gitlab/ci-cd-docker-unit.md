@@ -1,5 +1,7 @@
 # CI/CD for systemd docker
 
+[First create systemd service.](./../docker/unit.md)
+
 If you run your docker image with systemd, use this `.gitlab-ci.yml`:
 
 ```yaml
