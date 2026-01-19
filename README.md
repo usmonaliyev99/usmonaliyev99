@@ -11,7 +11,7 @@
 	<h1>My skills</h1>
 </div>
 
-<pre>In this list, you can see my dayily skills.</pre>
+<pre>In this list, you can see my dayily activities.</pre>
 <img src="https://skillicons.dev/icons?i=vim,php,laravel,git,postgres,redis,py,linux&theme=light" />
 
 <pre>In these day, I'm learning devops so I want to share that with you.</pre>
