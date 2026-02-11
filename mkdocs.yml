@@ -36,6 +36,7 @@ nav:
     - Devices: networking/devices.md
     - Modes: networking/modes.md
     - SubModes: networking/sub-modes.md
+    - Login with ssh: networking/ssh.md
     - Console: networking/console.md
 
 plugins:
