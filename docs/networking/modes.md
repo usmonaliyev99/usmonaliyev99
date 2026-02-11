@@ -31,7 +31,7 @@ Purpose:
 - Full monitoring access
 - Can enter configuration modes
 
-3. Global Configuration Mode
+3. Global configuration mode
 
 Prompt:
 
