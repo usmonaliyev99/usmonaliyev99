@@ -32,6 +32,11 @@ nav:
     - helm: gitlab/helm.md
     - CI/CD: gitlab/ci-cd.md
     - CI/CD for systemd: gitlab/ci-cd-docker-unit.md 
+  - Networking:
+    - Devices: networking/devices.md
+    - Modes: networking/modes.md
+    - SubModes: networking/sub-modes.md
+    - Console: networking/console.md
 
 plugins:
   - search
